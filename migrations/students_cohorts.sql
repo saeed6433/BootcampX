@@ -14,4 +14,6 @@ CREATE TABLE students (
   start_date DATE,
   end_date DATE,
   cohort_id INTEGER REFERENCES cohorts(id) ON DELETE CASCADE
+--ON DELETE CASCADE option to specify whether you want rows deleted in
+--a child table when corresponding rows are deleted in the parent table.
 );
